@@ -329,7 +329,43 @@ void loop() {
 ```
 
 ### Seriová komunikace
+Slouží pro komunikaci s PC, případně Bluetooth. 
+
+https://arduino.cz/seriova-komunikace-a-cykly/
+
 ### Používání Multi-Functional shieldu
+
+## Kdyby vás to zaujalo
+
+### Koho sledovat na youtube
+[GreatScott!](https://www.youtube.com/user/greatscottlab)
+
+[educ8s.tv!](https://www.youtube.com/channel/UCxqx59koIGfGRRGeEm5qzjQ)
+
+[MKme Lab](https://www.youtube.com/channel/UCTo55-kBvyy5Y1X_DTgrTOQ)
+
+[Mert Arduino and Tech](https://www.youtube.com/channel/UCAH7OfjndkAgtjkmJ6IQvEw/videos)
+
+
+### A ideální košík na Aliexpresu
+
+- [Arduino Nano][A1]
+- [Nepájivé pole][A2]
+- [Nějaké odpory, diody, tlačítka a potenciometry][A3]
+- Nějaký displej ( [1602][A6], [0,96" OLED][A7], [Nokia 5110 displej][A8] ) 
+- [Nějaký sensor kit][A5]
+- [Nebo kompletní Arduino Starter Kit][A4]
+
+[A1]: https://www.aliexpress.com/item/Freeshipping-Nano-3-0-controller-compatible-for-arduino-nano-CH340-USB-driver-NO-CABLE/32341832857.html?spm=2114.search0104.3.1.31162b20Kwform&ws_ab_test=searchweb0_0,searchweb201602_2_10152_10151_10065_10344_10068_10342_10343_10340_10341_10084_10083_10618_10304_10307_10302_5711211_5722315_10313_10059_10534_100031_10629_10103_10626_10625_10624_10623_10622_10621_10620_10142-10621,searchweb201603_38,ppcSwitch_5&algo_expid=aaf6c13f-3a9b-475b-88f9-9143cf7ef819-0&algo_pvid=aaf6c13f-3a9b-475b-88f9-9143cf7ef819&priceBeautifyAB=0
+[A2]: https://www.aliexpress.com/item/MB102-Breadboard-power-module-MB-102-830-points-Solderless-Prototype-Bread-board-kit-65-Flexible-jumper/32690555189.html?spm=2114.search0104.3.1.4fbc3e446f2PLl&ws_ab_test=searchweb0_0,searchweb201602_2_10152_10151_10065_10344_10068_10342_10343_10340_10341_10084_10083_10618_10304_10307_10302_5711211_5722315_10313_10059_10534_100031_10629_10103_10626_10625_10624_10623_10622_10621_10620_10142-10621,searchweb201603_38,ppcSwitch_5&algo_expid=e8b55d90-b5cc-4864-bc58-2ecf5f5be56f-0&algo_pvid=e8b55d90-b5cc-4864-bc58-2ecf5f5be56f&priceBeautifyAB=0
+[A3]: https://www.aliexpress.com/item/HX-Studio-Electronics-component-pack-with-resistors-LEDs-Switch-Potentiometer-for-Arduino-UNO-MEGA2560-Raspberry-Pi/32811565832.html?spm=2114.search0104.3.8.3d1c57a9JeEbUx&ws_ab_test=searchweb0_0,searchweb201602_2_10152_10151_10065_10344_10068_10342_10343_10340_10341_10084_10083_10618_10304_10307_10302_5711211_5722315_10313_10059_10534_100031_10629_10103_10626_10625_10624_10623_10622_10621_10620_10142,searchweb201603_38,ppcSwitch_5&algo_expid=79b6b1c6-14f5-4d46-a3c9-303b2be6e0c0-1&algo_pvid=79b6b1c6-14f5-4d46-a3c9-303b2be6e0c0&priceBeautifyAB=0
+[A4]: https://www.aliexpress.com/item/NEWEST-RFID-Starter-Kit-for-Arduino-UNO-R3-Upgraded-version-Learning-Suite-With-Retail-Box/32714696336.html?spm=2114.search0104.3.1.32631e47P9xXQN&ws_ab_test=searchweb0_0,searchweb201602_2_10152_10151_10065_10344_10068_10342_10343_10340_10341_10084_10083_10618_10304_10307_10302_5711211_5722315_10313_10059_10534_100031_10629_10103_10626_10625_10624_10623_10622_10621_10620_10142-10621,searchweb201603_38,ppcSwitch_5&algo_expid=1c223a8e-ce64-4dc3-8435-72a0d1553b19-0&algo_pvid=1c223a8e-ce64-4dc3-8435-72a0d1553b19&priceBeautifyAB=0
+[A5]: https://www.aliexpress.com/item/37-in-1-box-Sensor-Kit-For-Arduino-Starters-brand-in-stock/32695281182.html?spm=2114.search0104.3.2.3481cbf4s2oWgS&ws_ab_test=searchweb0_0,searchweb201602_2_10152_10151_10065_10344_10068_10342_10343_10340_10341_10084_10083_10618_10304_10307_10302_5711211_5722315_10313_10059_10534_100031_10629_10103_10626_10625_10624_10623_10622_10621_10620_10142,searchweb201603_38,ppcSwitch_5&algo_expid=54f79b86-3fcd-417e-948d-90a171a8594e-0&algo_pvid=54f79b86-3fcd-417e-948d-90a171a8594e&priceBeautifyAB=0
+[A6]: https://www.aliexpress.com/item/1PCS-LCD-module-Blue-screen-IIC-I2C-1602-for-arduino-1602-LCD-UNO-r3-mega2560/32763867041.html?spm=2114.search0104.3.2.69971844dw50if&ws_ab_test=searchweb0_0,searchweb201602_2_10152_10151_10065_10344_10068_10342_10343_10340_10341_10084_10083_10618_10304_10307_10302_5711211_5722315_10313_10059_10534_100031_10629_10103_10626_10625_10624_10623_10622_10621_10620_10142,searchweb201603_38,ppcSwitch_5&algo_expid=5ca41b5c-0110-4324-9854-5a6a38c4e40f-0&algo_pvid=5ca41b5c-0110-4324-9854-5a6a38c4e40f&priceBeautifyAB=0
+[A7]: https://www.aliexpress.com/item/0-96-inch-IIC-Serial-White-OLED-Display-Module-128X64-I2C-SSD1306-12864-LCD-Screen-Board/32780054633.html?spm=2114.search0104.3.44.56a94ddewbE0Nd&ws_ab_test=searchweb0_0,searchweb201602_2_10152_10151_10065_10344_10068_10342_10343_10340_10341_10084_10083_10618_10304_10307_10302_5711211_5722315_10313_10059_10534_100031_10629_10103_10626_10625_10624_10623_10622_10621_10620_10142,searchweb201603_38,ppcSwitch_5&algo_expid=575927fb-2ddd-47c0-8028-5a0dd1369e6f-6&algo_pvid=575927fb-2ddd-47c0-8028-5a0dd1369e6f&priceBeautifyAB=0
+[A8]: https://www.aliexpress.com/item/84-48-LCD-Module-White-backlight-adapter-pcb-for-Nokia-5110/1859113549.html?spm=2114.search0104.3.2.62f21848YXZV3Q&ws_ab_test=searchweb0_0,searchweb201602_2_10152_10151_10065_10344_10068_10342_10343_10340_10341_10084_10083_10618_10304_10307_10302_5711211_5722315_10313_10059_10534_100031_10629_10103_10626_10625_10624_10623_10622_10621_10620_10142-10620,searchweb201603_38,ppcSwitch_5&algo_expid=8803482e-708e-4cdb-91fc-559c0519cbd3-0&algo_pvid=8803482e-708e-4cdb-91fc-559c0519cbd3&priceBeautifyAB=0
+
+
 
 ## Zdroje:
 
