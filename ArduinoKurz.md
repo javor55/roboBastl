@@ -161,31 +161,32 @@ Zpoždění bez příkazu `delay()` a schvonání kódu do funkce
  ```cpp
 unsigned long previousMillis = 0;      
 int ledPin = 13;
+int ledState = 0;
+
 void setup() {
-  // set the digital pin as output:
-  pinMode(ledPin, OUTPUT);
+ // set the digital pin as output:
+ pinMode(ledPin, OUTPUT);
 }
 
-void loop() {
-  
-  if (waitMoment(1000)) {    
-    if (ledState == LOW) {
-      ledState = HIGH;
-    } else {
-      ledState = LOW;
-    }
-    // set the LED with the ledState of the variable:
-    digitalWrite(ledPin, ledState);
-  }
+void loop() { 
+ if (waitMoment(1000)) {    
+   if (ledState == LOW) {
+     ledState = HIGH;
+   } else {
+     ledState = LOW;
+   }
+   // set the LED with the ledState of the variable:
+   digitalWrite(ledPin, ledState);
+ }
+}
 
-  bool waitMoment(interval){
-    unsigned long currentMillis = millis();
-    if (currentMillis - previousMillis >= interval) {
-        previousMillis = currentMillis;
-        return true;
-    }
-    return false;    
-  }
+bool waitMoment(int interval) {
+   unsigned long currentMillis = millis();
+   if (currentMillis - previousMillis >= interval) {
+       previousMillis = currentMillis;
+       return true;
+   }
+   return false;    
 }
 ```
 
@@ -330,6 +331,10 @@ void loop() {
 
 ### Seriová komunikace
 ### Používání Multi-Functional shieldu
+
+### CO dál? 
+  - ukázat zakladni měřící přístroje 
+  - vymyslet co delat... 
 
 ## Zdroje:
 
