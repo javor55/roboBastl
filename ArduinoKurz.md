@@ -332,7 +332,7 @@ void loop() {
 ### Seriová komunikace
 ### Používání Multi-Functional shieldu
 
-### CO dál? 
+### Co dál? 
   - ukázat zakladni měřící přístroje 
   - vymyslet co delat... 
 
