@@ -330,10 +330,47 @@ void loop() {
 
 ### Seriová komunikace
 Slouží pro komunikaci s PC, případně Bluetooth. 
+```cpp
+void setup() {                
+// Turn the Serial Protocol 
+  Serial.begin(9600);
+}
+```
+otevření seriové komunikace
+```cpp
+void setup() {                
+// Turn the Serial Protocol 
+  Serial.begin(9600);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+    }
+}
+```
+Posílání dat přes seriovou linku probíha pomocí příkazů `Serial.print()` a `Serial.println()`, 
+čtení dat pomocí `Serial.available()` a `Serial.read()`.
 
-https://arduino.cz/seriova-komunikace-a-cykly/
-
+Příklad:
+```cpp
+void setup() {                
+// Turn the Serial Protocol 
+  Serial.begin(9600);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+    }
+}
+void loop(){
+    Serial.print("Máma mele maso");
+    delay(500);
+    
+    while (Serial.available()>0){
+        serIn = Serial.read();	//read Serial        
+        Serial.print(serIn, BYTE); 	//prints the character just read
+     }
+}
+```
 ### Používání Multi-Functional shieldu
+
+
 
 ## Kdyby vás to zaujalo
 
