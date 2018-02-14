@@ -370,6 +370,7 @@ void loop(){
 ```
 ### Používání Multi-Functional shieldu
 
+https://www.mpja.com/download/hackatronics-arduino-multi-function-shield.pdf
 
 
 ## Kdyby vás to zaujalo
