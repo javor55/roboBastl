@@ -25,12 +25,12 @@ Wikipedie říká:
     - šest analogových vstupů (0–6)
     - různé vývody napájení (napájecí napětí, 5V stabilizovaných, 3.3V, GND)
 
-![ArduinoUno](./UNOV3PDF.png)
+![ArduinoUno](./Images/UNOV3PDF.png)
 
 ### Programování 
 #### Programovací prostředí (IDE)
 Není tak komplikovaný jako "vyspělá" prostředí pro pokročilé jazyky. V hlavní časti okna nalezneme prostor pro náš kód, nad ním několik užitečných tlačítek pro zkontrolování kódu, nahrávání programu, uložení, atd. V řádků navigačních prvků nás bude zajímat nabídka Nástroje, kde musíme nastavit správnou desku a seriový port.
-![ArduinoIDE](./ArduinoIDE.png)
+![ArduinoIDE](./Images/ArduinoIDE.png)
 #### Struktura programu
 Základní struktura programovacího jazyka Arduino je poměrně jednoduchá a skládá se nejméně ze dvou
 částí, přesněji funkcí.
@@ -193,7 +193,7 @@ void loop() {
 připojíme LED přes nepájívé pole
 
 rezistor 220 Ohm
-![ArduinoIDE](./blink.png)
+![ArduinoIDE](./Images/blink.png)
 #### Modifikace 2
 Vytvoření blikačky
 
@@ -227,7 +227,7 @@ void loop () {
 Připojení tlačítka
 
 rezostor 10K Ohm
-![ArduinoIDE](./button.png)
+![ArduinoIDE](./Images/button.png)
 ```cpp
 // constants won't change. They're used here to set pin numbers:
 const int buttonPin = 2;     // the number of the pushbutton pin
@@ -259,7 +259,7 @@ void loop() {
 ```
 
 varianta s připojením input-pullup rezistoru softwarově 
-![ArduinoIDE](./button_pullup.png)
+![ArduinoIDE](./Images/button_pullup.png)
 ```cpp
 void setup() {
   //start serial connection
