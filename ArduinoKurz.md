@@ -30,11 +30,8 @@ Wikipedie říká:
 ### Programování 
 #### Programovací prostředí (IDE)
 Není tak komplikovaný jako "vyspělá" prostředí pro pokročilé jazyky. V hlavní časti okna nalezneme prostor pro náš kód, nad ním několik užitečných tlačítek pro zkontrolování kódu, nahrávání programu, uložení, atd. V řádků navigačních prvků nás bude zajímat nabídka Nástroje, kde musíme nastavit správnou desku a seriový port.
-<<<<<<< HEAD
-![ArduinoIDE](./Images/ArduinoIDE.png)
-=======
 ![ArduinoIDE](./ArduinoIDE.PNG)
->>>>>>> 2bb43a1fa9f8908fc483034817a029e72ecb724b
+
 #### Struktura programu
 Základní struktura programovacího jazyka Arduino je poměrně jednoduchá a skládá se nejméně ze dvou
 částí, přesněji funkcí.
