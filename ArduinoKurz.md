@@ -30,8 +30,7 @@ Wikipedie říká:
 ### Programování 
 #### Programovací prostředí (IDE)
 Není tak komplikovaný jako "vyspělá" prostředí pro pokročilé jazyky. V hlavní časti okna nalezneme prostor pro náš kód, nad ním několik užitečných tlačítek pro zkontrolování kódu, nahrávání programu, uložení, atd. V řádků navigačních prvků nás bude zajímat nabídka Nástroje, kde musíme nastavit správnou desku a seriový port.
-![ArduinoIDE](./Images/ArduinoIDE.PNG)
-
+![ArduinoIDE](./ArduinoIDE.PNG)
 #### Struktura programu
 Základní struktura programovacího jazyka Arduino je poměrně jednoduchá a skládá se nejméně ze dvou
 částí, přesněji funkcí.
@@ -370,12 +369,32 @@ void loop(){
      }
 }
 ```
+
+### Bluetooth modul HC-05
+
+- [ZDROJ](http://navody.arduino-shop.cz/navody-k-produktum/arduino-bluetooth-modul-hc-05.html)
+- Bluetooth ve verzi 2.0 
+- s Arduinem komunikuje pomocí seriové linky
+- dosah maximálně 10 metrů
+- využíva kmihovnu `SoftwareSerial.h`
+
+![ArduinoIDE](./Images/bluetooth.png)
+
+
+
 ### Používání Multi-Functional shieldu
 
 ### Co dál? 
   - ukázat zakladni měřící přístroje 
   - vymyslet co delat... 
+  - !!! komunikace s bluetooth
 
+### Koho sledovat
+  - [GreatScott](https://www.youtube.com/user/greatscottlab)
+  - [educ8s.tv](https://www.youtube.com/user/educ8s)
+  - [Arduino návody](https://www.youtube.com/channel/UCdU8_paowYi0kYOkjDHSrYg/videos)
+### Dream nakupní košík 
+  - 
 ## Zdroje:
 
 [ARDUINO – příručka programátora ](http://robotikabrno.cz/docs/arduino/Pr%C5%AFvodce-sv%C4%9Btem-Arduina-CZ.pdf)
