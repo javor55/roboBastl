@@ -380,8 +380,6 @@ void loop(){
 
 ![ArduinoIDE](./Images/bluetooth.png)
 
-
-
 ### Používání Multi-Functional shieldu
 
 ### Co dál? 
@@ -395,6 +393,19 @@ void loop(){
   - [Arduino návody](https://www.youtube.com/channel/UCdU8_paowYi0kYOkjDHSrYg/videos)
 ### Dream nakupní košík 
   - 
+
+## Základní práce s měřicími přístroji
+[k pročtení](https://student.sps-prosek.cz/~klaumi11m/P%C5%99%C3%ADru%C4%8Dka%20-%20Z%C3%A1klady%20elektrick%C3%A9ho%20m%C4%9B%C5%99en%C3%AD.pdf)
+
+### Multimetr
+
+#### Napětí 
+#### Proud
+#### Odpor
+
+### Osciloskop
+  
+  
 ## Zdroje:
 
 [ARDUINO – příručka programátora ](http://robotikabrno.cz/docs/arduino/Pr%C5%AFvodce-sv%C4%9Btem-Arduina-CZ.pdf)
