@@ -384,7 +384,8 @@ void loop(){
 - budeme potřebovat ultrazvukový senzor HC-SR04 a pípák (repráček)
 - čerpáme opět z webu, přesněji [ZDE](http://www.instructables.com/id/HC-SR04-Buzzer-Arduino-Parking-Assist-Sensor/)
 
-![zapojení](./Images/ulrasonic.jpg)
+![zapojení](./Images/ultrasonic.jpg)
+
 zapojení bzučáku je velmi jednoduché. Plus přivedeme na pin 6 a mínus na pin GND
 
 kód:
