@@ -451,6 +451,12 @@ return distance;
 }
 
 ```
+
+### Jednoduchý termostat
+- připojení teploměru a práce s relátkem
+- asi by to chtělo zmínit pojmy spojitá a nespojitá regulace ( analogovy výstup / digitální)
+
+
 ### Servo 
 - V tomto příkladě si zapojíme servo a budeme ovladat úhel jeho natočení pomocí potenciometru
 - [ZDROJ](https://www.arduino.cc/en/Tutorial/Knob)
