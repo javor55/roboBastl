@@ -394,8 +394,8 @@ kód:
 // defines pins numbers
 const int trigPin = 9;
 const int echoPin = 10;
-const int buzzer = 6;
-
+const int buzzer = 3;
+int ledPin = 13;
 // defines variables
 long duration;
 int distance;
@@ -406,30 +406,46 @@ void setup() {
 pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
 pinMode(echoPin, INPUT); // Sets the echoPin as an Input
 pinMode(buzzer, OUTPUT);
-
+pinMode(ledPin, OUTPUT);
 safetyDistance = ultrasonic();
 
 Serial.begin(9600); // Starts the serial communication
+
+
 }
 
 
 void loop() {
 
 int dist = ultrasonic();
-
-if (dist <= safetyDistance){
-  tone(buzzer, 2500);
-  delay(500);
-  tone (buzzer, 2500);  
+if (dist <= 5)
+{ 
+  tone(buzzer, 300);
+  digitalWrite(ledPin, HIGH);
+}
+else if (dist <= safetyDistance){
+  int val = map(dist, 5,safetyDistance,100,800);
+  digitalWrite(ledPin, LOW);
+  noTone(buzzer);  
+  digitalWrite(ledPin, HIGH);
+  tone(buzzer, 500);
+  delay(val);
+  digitalWrite(ledPin, LOW);
+  noTone(buzzer);  
+  delay(val);
+  
 }
 else{
+
   noTone (buzzer);
+  digitalWrite(ledPin, LOW);
 }
 
-// Prints the distance on the Serial Monitor
-Serial.print("Distance: ");
-Serial.println(dist);
+
 }
+
+
+
 
 int ultrasonic(){
 // Clears the trigPin
@@ -449,7 +465,6 @@ distance= duration*0.034/2;
 
 return distance;
 }
-
 ```
 
 ### Jednoduchý termostat
