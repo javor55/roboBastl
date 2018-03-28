@@ -390,80 +390,70 @@ zapojení bzučáku je velmi jednoduché. Plus přivedeme na pin 6 a mínus na p
 
 kód:
 ```cpp
-
 // defines pins numbers
 const int trigPin = 9;
 const int echoPin = 10;
 const int buzzer = 3;
-int ledPin = 13;
+const int ledPin = 13;
 // defines variables
 long duration;
 int distance;
 int safetyDistance;
 
-
 void setup() {
-pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
-pinMode(echoPin, INPUT); // Sets the echoPin as an Input
-pinMode(buzzer, OUTPUT);
-pinMode(ledPin, OUTPUT);
-safetyDistance = ultrasonic();
+  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+  pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+  pinMode(buzzer, OUTPUT); // Sets the buzzer as an Output
+  pinMode(ledPin, OUTPUT); // Sets the ledPin as an Output
+  
+  safetyDistance = ultrasonic(); // init safety distance
 
-Serial.begin(9600); // Starts the serial communication
-
-
+  Serial.begin(9600);   // Starts the serial communication
 }
 
 
 void loop() {
+  int dist = ultrasonic();
 
-int dist = ultrasonic();
-if (dist <= 5)
-{ 
-  tone(buzzer, 300);
-  digitalWrite(ledPin, HIGH);
+  if (dist <= 5) {  //distance for npnstop beep
+    tone(buzzer, 500);  
+    digitalWrite(ledPin, HIGH);
+  }
+  else if (dist <= safetyDistance) {
+    int val = map(dist, 5,safetyDistance,100,800); //map delay depend on distance
+
+    digitalWrite(ledPin, LOW);
+    noTone(buzzer);  
+    digitalWrite(ledPin, HIGH);
+    tone(buzzer, 500);
+    delay(val);
+    digitalWrite(ledPin, LOW);
+    noTone(buzzer);  
+    delay(val);    
+  }
+  else{
+    noTone (buzzer);
+    digitalWrite(ledPin, LOW);
+  }
 }
-else if (dist <= safetyDistance){
-  int val = map(dist, 5,safetyDistance,100,800);
-  digitalWrite(ledPin, LOW);
-  noTone(buzzer);  
-  digitalWrite(ledPin, HIGH);
-  tone(buzzer, 500);
-  delay(val);
-  digitalWrite(ledPin, LOW);
-  noTone(buzzer);  
-  delay(val);
-  
-}
-else{
-
-  noTone (buzzer);
-  digitalWrite(ledPin, LOW);
-}
-
-
-}
-
-
-
 
 int ultrasonic(){
-// Clears the trigPin
-digitalWrite(trigPin, LOW);
-delayMicroseconds(2);
+  // Clears the trigPin
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
 
-// Sets the trigPin on HIGH state for 10 micro seconds
-digitalWrite(trigPin, HIGH);
-delayMicroseconds(10);
-digitalWrite(trigPin, LOW);
+  // Sets the trigPin on HIGH state for 10 micro seconds
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
 
-// Reads the echoPin, returns the sound wave travel time in microseconds
-duration = pulseIn(echoPin, HIGH);
+  // Reads the echoPin, returns the sound wave travel time in microseconds
+  duration = pulseIn(echoPin, HIGH);
 
-// Calculating the distance
-distance= duration*0.034/2;
+  // Calculating the distance
+  distance= duration*0.034/2;
 
-return distance;
+  return distance;
 }
 ```
 
