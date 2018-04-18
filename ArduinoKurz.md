@@ -461,6 +461,75 @@ int ultrasonic(){
 - připojení teploměru a práce s relátkem
 - asi by to chtělo zmínit pojmy spojitá a nespojitá regulace ( analogovy výstup / digitální)
 
+kód:
+```cpp
+    
+// připojení knihovny U8glib pro display
+#include "U8glib.h"
+// připojení knihovny pro DHT
+#include <SimpleDHT.h>
+
+// inicializace OLED displeje 
+U8GLIB_SSD1306_128X64 mujOled(U8G_I2C_OPT_NONE);
+// inicializace teplomeru
+SimpleDHT11 dht11;
+
+//pin na který muze byt připojena led, rele, ...
+int outputPin = 8;
+
+//promena pro displej.. nevim co dela
+long int prepis = 0;
+
+//pin na kterém je připojen DHT
+int pinDHT11 = 2;
+
+//promene pro ulozeni casu a vlhkosti
+byte temperature = 0;
+byte humidity = 0;
+
+void setup(void) {
+  pinMode(outputPin, OUTPUT); 
+}
+
+void loop(void) {
+  dht11.read(pinDHT11, &temperature, &humidity, NULL);
+
+  if (millis()-prepis > 100) {
+    // následující skupina příkazů
+    // obnoví obsah OLED displeje
+    mujOled.firstPage();
+    do {
+      // funkce vykresli vykreslí žádanou obsah
+      vykresli();
+    } while( mujOled.nextPage() );
+    // uložení posledního času obnovení
+    prepis = millis();
+  }
+
+  if((int)temperature > 23){
+    
+    digitalWrite(outputPin,HIGH);   
+  }
+  else{
+    digitalWrite(outputPin,LOW);
+  }
+  delay(500);
+}
+
+// funkce vykresli pro nastavení výpisu informací na OLED
+void vykresli(void) {
+  
+  mujOled.setFont(u8g_font_unifont);
+  
+  mujOled.setPrintPos(0, 10);
+  mujOled.print("Teplota: ");
+  mujOled.print((int)temperature);
+  
+  mujOled.setPrintPos(0, 25);
+  mujOled.print("Vlhkost: ");
+  mujOled.print((int)humidity);
+}
+```
 
 ### Servo 
 - V tomto příkladě si zapojíme servo a budeme ovladat úhel jeho natočení pomocí potenciometru
