@@ -557,6 +557,7 @@ void loop() {
 ### Ovládání relé pomocí IR 
 
 - [Kouknout sem](http://www.instructables.com/id/Arduino-Infrared-Remote-tutorial/)
+- [Knihovna](https://github.com/z3t0/Arduino-IRremote)
 
 
 ### Co dál? 
