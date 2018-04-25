@@ -554,9 +554,10 @@ void loop() {
   delay(15);                           // waits for the servo to get there
 }
 ```
+### Ovládání relé pomocí IR 
 
+- [Kouknout sem](http://www.instructables.com/id/Arduino-Infrared-Remote-tutorial/)
 
-### Používání Multi-Functional shieldu
 
 ### Co dál? 
   - ukázat zakladni měřící přístroje 
