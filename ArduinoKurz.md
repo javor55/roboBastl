@@ -564,6 +564,9 @@ void loop() {
 - [TB6612FNG](https://learn.sparkfun.com/tutorials/tb6612fng-hookup-guide)
 - [MOSFET](http://bildr.org/2012/03/rfp30n06le-arduino/)
 
+### MEGA PROJEKT - Obstacle Avoiding Robot
+- [Obstacle Avoiding Robot](https://www.youtube.com/watch?v=jQwYBc7YBXs)
+
 ### Co dál? 
   - ukázat zakladni měřící přístroje 
   - vymyslet co delat... 
