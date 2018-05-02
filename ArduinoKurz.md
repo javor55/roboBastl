@@ -566,6 +566,7 @@ void loop() {
 
 ### MEGA PROJEKT - Obstacle Avoiding Robot
 - [Obstacle Avoiding Robot](https://www.youtube.com/watch?v=jQwYBc7YBXs)
+- [Odkaz na instructables](http://www.instructables.com/id/Arduino-Obstacle-Avoiding-Robot-2/)
 
 ### Co dál? 
   - ukázat zakladni měřící přístroje 
