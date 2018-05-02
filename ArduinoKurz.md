@@ -559,6 +559,10 @@ void loop() {
 - [Kouknout sem](http://www.instructables.com/id/Arduino-Infrared-Remote-tutorial/)
 - [Knihovna](https://github.com/z3t0/Arduino-IRremote)
 
+### Jak ovládat motory?
+- [L298N H-bridge](https://howtomechatronics.com/tutorials/arduino/arduino-dc-motor-control-tutorial-l298n-pwm-h-bridge/)
+- [TB6612FNG](https://learn.sparkfun.com/tutorials/tb6612fng-hookup-guide)
+- [MOSFET](http://bildr.org/2012/03/rfp30n06le-arduino/)
 
 ### Co dál? 
   - ukázat zakladni měřící přístroje 
